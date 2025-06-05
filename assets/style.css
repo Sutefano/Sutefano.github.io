@@ -43,7 +43,7 @@
 }
 .inner {
     color: paleturquoise;
-    margin-top: 10vmax; /* replaces top positioning */
+    margin-top: 5vmax; /* replaces top positioning */
     margin-left: 10vw;  /* replaces left positioning */
     
 }
@@ -58,7 +58,8 @@
 /* Large screens */
 @media (min-width: 1024px) {
     .inner {
-        left: 12vw;
+        margin-left: 20vw;
+        margin-top: 15vmax;
     }
 }
 /* Medium screens */
@@ -70,7 +71,8 @@
         font-size: 16px;
     }
     .inner {
-        left: 1vw;
+        margin-left: 15vw;
+        margin-top: 10vmax;
     }
 }
 
@@ -83,7 +85,8 @@
         font-size: 14px;
     }
     .inner {
-        left: 1vw;
+        margin-left: 5vw;
+        margin-top: 5vmax;
     }
 }
 
@@ -96,6 +99,7 @@
         font-size: 12px;
     }
     .inner {
-        left: 1vw;
+        margin-left: 5vw;
+        margin-top: 5vmax;
     }
 }
