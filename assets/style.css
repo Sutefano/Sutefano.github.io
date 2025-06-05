@@ -58,7 +58,7 @@
 /* Large screens */
 @media (min-width: 1024px) {
     .inner {
-        left: 25vw;
+        left: 12vw;
     }
 }
 /* Medium screens */
@@ -70,7 +70,7 @@
         font-size: 16px;
     }
     .inner {
-        left: 5vw;
+        left: 1vw;
     }
 }
 
@@ -83,7 +83,7 @@
         font-size: 14px;
     }
     .inner {
-        left: 10vw;
+        left: 1vw;
     }
 }
 
@@ -96,6 +96,6 @@
         font-size: 12px;
     }
     .inner {
-        left: 5vw;
+        left: 1vw;
     }
 }
