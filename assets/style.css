@@ -1,0 +1,101 @@
+* {
+        margin: 0;
+        padding: 0;
+    }
+
+.bg {
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Make content scrollable in front */
+.content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+
+    /* Optional: padding for spacing from edges */
+    padding: 2rem;
+
+    /* Transparent background to show image behind */
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+/* Hide scrollbar for WebKit (Chrome, Safari) */
+.content-wrapper::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* Hide scrollbar for Firefox */
+.content-wrapper {
+    scrollbar-width: none; /* Firefox */
+}
+.inner {
+    color: paleturquoise;
+    margin-top: 10vmax; /* replaces top positioning */
+    margin-left: 10vw;  /* replaces left positioning */
+    
+}
+.name {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.underline{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+/* Large screens */
+@media (min-width: 1024px) {
+    .inner {
+        left: 25vw;
+    }
+}
+/* Medium screens */
+@media (max-width: 1024px) {
+    .name {
+        font-size: 28px;
+    }
+    .underline {
+        font-size: 16px;
+    }
+    .inner {
+        left: 15vw;
+    }
+}
+
+/* Smaller tablets */
+@media (max-width: 768px) {
+    .name {
+        font-size: 24px;
+    }
+    .underline {
+        font-size: 14px;
+    }
+    .inner {
+        left: 10vw;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .name {
+        font-size: 20px;
+    }
+    .underline {
+        font-size: 12px;
+    }
+    .inner {
+        left: 5vw;
+    }
+}
