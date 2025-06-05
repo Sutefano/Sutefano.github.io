@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .layout {
@@ -58,13 +59,11 @@ body, html {
     height: 100vh;
 }
 .name {
-    font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     font-weight: 400;
     margin-bottom: 0.25rem; 
 }
 .underline{
-    font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     font-weight: 300;
     margin-top: 0; 
