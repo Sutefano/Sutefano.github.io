@@ -138,6 +138,10 @@ body, html {
 
 .top-nav button {
     background: none;
+    background-color: transparent; /* Explicitly transparent */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     border: none;
     color: white;
     font-size: 1rem;
@@ -146,6 +150,7 @@ body, html {
     cursor: pointer;
     padding: 0.5rem 1rem;
     transition: background 0.3s;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .top-nav button:hover {
