@@ -1,9 +1,15 @@
-* {
-        margin: 0;
-        padding: 0;
-    }
+body, html {
+    height: 100%;
+    margin: 0;
+}
 
+.layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
 .bg {
+    flex: 1;
     background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;      /* Scale image to cover entire container */
@@ -26,6 +32,7 @@
     overflow-x: hidden;
     z-index: 1;
     backdrop-filter: blur(10px);
+    box-shadow: 10px 0 20px rgb(4, 24, 206);
 
     /* Optional: padding for spacing from edges */
     padding: 2rem;
@@ -46,72 +53,102 @@
 }
 .inner {
     color: rgb(255, 255, 255);
-    margin-top: 5vmax; /* replaces top positioning */
-    margin-left: 10vw;  /* replaces left positioning */
-    
+    margin-top: 5vmax;
+    margin-left: 10vw;
+    height: 100vh;
 }
 .name {
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     font-weight: 400;
+    margin-bottom: 0.25rem; 
 }
 .underline{
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
-    font-weight: 300
+    font-weight: 300;
+    margin-top: 0; 
+}
+    /* Large screens */
+    @media (min-width: 1024px) {
+        .name {
+            font-size: 38px;
+        }
+        .underline {
+            font-size: 22px;
+        }
+        .inner {
+            margin-left: 15vw;
+            margin-top: 15vmax;
+        }
+    }
+    /* Medium screens */
+    @media (max-width: 1024px) {
+        .name {
+            font-size: 28px;
+        }
+        .underline {
+            font-size: 16px;
+        }
+        .inner {
+            margin-left: 15vw;
+            margin-top: 10vmax;
+        }
+    }
 
-}
-/* Large screens */
-@media (min-width: 1024px) {
-    .name {
-        font-size: 38px;
+    /* Smaller tablets */
+    @media (max-width: 768px) {
+        .name {
+            font-size: 24px;
+        }
+        .underline {
+            font-size: 14px;
+        }
+        .inner {
+            margin-left: 5vw;
+            margin-top: 5vmax;
+        }
     }
-    .underline {
-        font-size: 22px;
+
+    /* Mobile phones */
+    @media (max-width: 480px) {
+        .name {
+            font-size: 20px;
+        }
+        .underline {
+            font-size: 12px;
+        }
+        .inner {
+            margin-left: 3vw;
+            margin-top: 3vmax;
+        }
     }
-    .inner {
-        margin-left: 15vw;
-        margin-top: 15vmax;
-    }
-}
-/* Medium screens */
-@media (max-width: 1024px) {
-    .name {
-        font-size: 28px;
-    }
-    .underline {
-        font-size: 16px;
-    }
-    .inner {
-        margin-left: 15vw;
-        margin-top: 10vmax;
-    }
+
+.top-nav {
+    position: sticky; /* stays at top inside scrollable box */
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(39, 38, 121, 0.2); /* semi-transparent bar */
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Smaller tablets */
-@media (max-width: 768px) {
-    .name {
-        font-size: 24px;
-    }
-    .underline {
-        font-size: 14px;
-    }
-    .inner {
-        margin-left: 5vw;
-        margin-top: 5vmax;
-    }
+.top-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
 }
 
-/* Mobile phones */
-@media (max-width: 480px) {
-    .name {
-        font-size: 20px;
-    }
-    .underline {
-        font-size: 12px;
-    }
-    .inner {
-        margin-left: 3vw;
-        margin-top: 3vmax;
-    }
+.top-nav button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
