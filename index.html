@@ -5,8 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bg {
+        /* The image used */
+        background-image: url("/images/background.jpg");
+        position: relative;
+
+
+        /* Center and scale the image nicely */
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        
+    }
+    .inner {
+        position:absolute;
+        left:15vw;
+        top: 15vh;
+        color: paleturquoise;
+    }
+    .name {
+        font-size: 3vw;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+    }
+    .underline{
+        font-size: 1.4vw;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+    }
+</style>
 <body>
-    <h1>Hello</h1>
-    <p>First Portfolio Website</p>
+    <div class="bg">
+        <div class="inner">
+            <h1 class="name">Stefan Danilesu</h1>
+            <p class="underline">Software developer</p>
+        </div>
+    </div>
+    
 </body>
 </html>
