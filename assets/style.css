@@ -39,7 +39,7 @@ body, html {
     padding: 2rem;
 
     /* Transparent background to show image behind */
-    background-color: rgba(30, 27, 110, 0.35); /* Light grey/white frost */
+    background-color: rgba(30, 27, 110, 0.8); /* Light grey/white frost */
 }
 
 /* Hide scrollbar for WebKit (Chrome, Safari) */
@@ -53,15 +53,22 @@ body, html {
     scrollbar-width: none; /* Firefox */
 }
 .inner {
-    color: rgb(255, 255, 255);
-    margin-top: 5vmax;
+    position: relative;
+    color: #c4c4c4;
+    margin-top: 10vmax;
     margin-left: 10vw;
+    margin-right: 10vw;
     height: 100vh;
 }
 .name {
     font-style: italic;
     font-weight: 400;
     margin-bottom: 0.25rem; 
+}
+.desc {
+    position: relative;
+    margin-right: 10vw;
+    font-size: 16px;
 }
 .underline{
     font-style: italic;
@@ -78,13 +85,16 @@ body, html {
         }
         .inner {
             margin-left: 15vw;
-            margin-top: 15vmax;
+            margin-top: 12vmax;
         }
         .top-nav{
             padding: 0.7rem;
         }
         .top-nav button{
             font-size: 1rem;
+        }
+        .desc{
+            font-size: 16px
         }
     }
     /* Medium screens */
@@ -98,12 +108,16 @@ body, html {
         .inner {
             margin-left: 15vw;
             margin-top: 10vmax;
+            margin-right: 12vw;
         }
         .top-nav{
             padding: 0.7rem;
         }
         .top-nav button{
             font-size: 0.9rem;
+        }
+        .desc{
+            font-size: 15px
         }
     }
 
@@ -124,6 +138,9 @@ body, html {
         }
         .top-nav button{
             font-size: 0.7rem;
+        }
+        .desc{
+            font-size: 13px
         }
     }
 
