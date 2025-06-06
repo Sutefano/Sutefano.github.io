@@ -80,6 +80,12 @@ body, html {
             margin-left: 15vw;
             margin-top: 15vmax;
         }
+        .top-nav{
+            padding: 0.7rem;
+        }
+        .top-nav button{
+            font-size: 1rem;
+        }
     }
     /* Medium screens */
     @media (max-width: 1024px) {
@@ -92,6 +98,12 @@ body, html {
         .inner {
             margin-left: 15vw;
             margin-top: 10vmax;
+        }
+        .top-nav{
+            padding: 0.7rem;
+        }
+        .top-nav button{
+            font-size: 0.9rem;
         }
     }
 
@@ -107,6 +119,12 @@ body, html {
             margin-left: 5vw;
             margin-top: 5vmax;
         }
+        .top-nav{
+            padding: 0.5rem;
+        }
+        .top-nav button{
+            font-size: 0.7rem;
+        }
     }
 
     /* Mobile phones */
@@ -120,6 +138,12 @@ body, html {
         .inner {
             margin-left: 3vw;
             margin-top: 3vmax;
+        }
+        .top-nav{
+            padding: 0.25rem;
+        }
+        .top-nav button{
+            font-size: 0.6rem;
         }
     }
 
@@ -143,7 +167,6 @@ body, html {
     appearance: none;
     border: none;
     color: white;
-    font-size: 1rem;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
