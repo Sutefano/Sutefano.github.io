@@ -162,6 +162,10 @@ body, html {
         .top-nav button{
             font-size: 0.4rem;
         }
+        .desc{
+            font-size: 11px;
+            margin-top: 10vh;
+        }
     }
 
 .top-nav {
