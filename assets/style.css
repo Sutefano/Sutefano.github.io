@@ -94,7 +94,8 @@ body, html {
             font-size: 1rem;
         }
         .desc{
-            font-size: 16px
+            font-size: 16px;
+            margin-top: 10vh;
         }
     }
     /* Medium screens */
@@ -117,7 +118,9 @@ body, html {
             font-size: 0.9rem;
         }
         .desc{
-            font-size: 15px
+            font-size: 15px;
+            margin-top: 10vh;
+            
         }
     }
 
