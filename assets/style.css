@@ -15,6 +15,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;      /* Scale image to cover entire container */
     background-position: center; /* Center the image */
+    background-attachment: fixed;
     height: 100vh;               /* Full viewport height */
     width: 100vw;                /* Full viewport width */
     overflow: hidden;
@@ -67,9 +68,10 @@ body, html {
 }
 .desc {
     position: relative;
-    margin-right: 6vw;
+    margin-right: 1vw;
     font-size: 16px;
 }
+
 .underline{
     font-style: italic;
     font-weight: 300;
@@ -119,8 +121,7 @@ body, html {
         }
         .desc{
             font-size: 15px;
-            margin-top: 10vh;
-            
+            margin-top: 10vh;            
         }
     }
 
@@ -143,7 +144,8 @@ body, html {
             font-size: 0.7rem;
         }
         .desc{
-            font-size: 13px
+            font-size: 13px;
+            margin-right: 1vh;
         }
     }
 
