@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
 }
 
 .layout {
@@ -55,7 +56,7 @@ body, html {
 }
 .inner {
     position: relative;
-    color: #c4c4c4;
+    
     margin-top: 10vmax;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -77,6 +78,50 @@ body, html {
     font-weight: 300;
     margin-top: 0; 
 }
+.project{
+    position: relative;
+    width: auto;
+    background-color: rgba(113, 105, 224, 0.2);
+    padding: 2rem;
+    border-radius: 20px; /* This makes the edges rounded */
+}
+.arrow-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 16px solid white;
+}
+
+.project p{
+    font-size: 22px
+}
+.showcase{
+    width: auto;
+    margin: auto;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(7, 3, 233, 0.2);
+    border: solid 4px black;
+}
+.projImg{
+    margin: 20px;
+    width: 20vw;
+    height: auto;
+    border-radius: 20px;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
+}
+
     /* Large screens */
     @media (min-width: 1024px) {
         .name {
@@ -86,7 +131,7 @@ body, html {
             font-size: 22px;
         }
         .inner {
-            margin-left: 15vw;
+            margin-left: 12vw;
             margin-top: 12vmax;
         }
         .top-nav{
@@ -109,7 +154,7 @@ body, html {
             font-size: 16px;
         }
         .inner {
-            margin-left: 15vw;
+            margin-left: 12vw;
             margin-top: 10vmax;
             margin-right: 12vw;
         }
@@ -182,7 +227,8 @@ body, html {
     background-color: rgba(39, 38, 121, 0.2); /* semi-transparent bar */
     padding: 1rem;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+    border-top: 5px solid rgba(255, 255, 255, 0.2);
 }
 
 .top-nav button {
