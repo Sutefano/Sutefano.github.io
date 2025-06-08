@@ -116,7 +116,6 @@ body, html {
 }
 .projImg{
     margin: 20px;
-    width: 15vw;
     height: 30vh;
     border-radius: 20px;
     float: left;
@@ -185,7 +184,6 @@ body, html {
         .projImg{
             width: 22vw;
             max-width: 200px;
-            min-width: 200px;
             height: 25vh;
         }
     }
@@ -214,7 +212,7 @@ body, html {
         }
         .projImg{
             width: 60vw;
-            max-width: 300px;
+            max-width: 250px;
             height: 35vh;
         }
         .showcase{
@@ -248,8 +246,7 @@ body, html {
             margin-top: 10vh;
         }
         .projImg{
-            width: 40vw;
-            max-width: 40vw;
+            width: 45vw;
             height: 25vh;
         }
         .showcase{
