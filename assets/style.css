@@ -248,9 +248,9 @@ body, html {
             margin-top: 10vh;
         }
         .projImg{
-            width: 60vw;
-            max-width: 60vw;
-            height: 45vh;
+            width: 40vw;
+            max-width: 40vw;
+            height: 25vh;
         }
         .showcase{
             display:grid;
