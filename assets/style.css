@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
+    background-color: transparent;
 }
 
 .layout {
@@ -14,13 +15,13 @@ body, html {
     flex: 1;
     background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;      /* Scale image to cover entire container */
-    background-position: center; /* Center the image */
+    background-size: cover;      
+    background-position: center; 
     background-attachment: fixed;
-    height: 100vh;               /* Full viewport height */
-    width: 100vw;                /* Full viewport width */
+    height: 100vh;               
+    width: 100vw;                
     overflow: hidden;
-    position: relative;          /* Enables positioning for children */
+    position: relative;          
 }
 
 /* Make content scrollable in front */
@@ -112,7 +113,7 @@ body, html {
     border-radius: 20px;
     background-color: rgba(7, 3, 233, 0.2);
     border: solid 4px black;
-    display: inline-block;
+    display:flow-root;
 }
 .projImg{
     margin: 20px;
@@ -123,6 +124,11 @@ body, html {
 .showcase p{
     margin: 20px;
     font-size: 18px;
+}
+.logo{
+    max-width: 100px;
+    max-height: 50px;
+    margin-top: 20px;
 }
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
@@ -216,11 +222,12 @@ body, html {
             height: 35vh;
         }
         .showcase{
-            display:grid;
+            display:flow-root;
         }
         .showcase p{
             font-size: 14px;
         }
+
     }
 
     /* Mobile phones */
@@ -250,10 +257,13 @@ body, html {
             height: 25vh;
         }
         .showcase{
-            display:grid;
+            display:flow-root;
         }
         .showcase p{
             font-size: 10px;
+        }
+        .logo{
+            max-width: 60px;
         }
     }
 
