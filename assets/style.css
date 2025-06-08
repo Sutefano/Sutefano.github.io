@@ -249,14 +249,14 @@ body, html {
         }
         .projImg{
             width: 60vw;
-            max-width: 270px;
-            height: 35vh;
+            max-width: 60vw;
+            height: 45vh;
         }
         .showcase{
             display:grid;
         }
         .showcase p{
-            font-size: 13px;
+            font-size: 10px;
         }
     }
 
