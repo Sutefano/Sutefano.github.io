@@ -155,7 +155,7 @@ body, html {
         }
         .desc{
             font-size: 16px;
-            margin-top: 10vh;
+            margin-top: 7vh;
         }
         .projImg{
             width: 15vw;
@@ -303,4 +303,7 @@ body, html {
 *a:hover {
     background: rgba(7, 4, 235, 0.664);
     border-radius: 4px;
+}
+a:focus-visible {
+  outline: none;
 }
