@@ -24,7 +24,6 @@ body, html {
     position: relative;          
 }
 
-/* Make content scrollable in front */
 .content-wrapper {
     position: absolute;
     top: 3vh;
@@ -38,23 +37,19 @@ body, html {
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 10px 0 20px rgb(4, 24, 206);
-
-    /* Optional: padding for spacing from edges */
     padding: 2rem;
 
     /* Transparent background to show image behind */
-    background-color: rgba(75, 73, 134, 0.8); /* Light grey/white frost */
+    background-color: rgba(75, 73, 134, 0.8);
 }
 
-/* Hide scrollbar for WebKit (Chrome, Safari) */
 .content-wrapper::-webkit-scrollbar {
     width: 0px;
     background: transparent;
 }
 
-/* Hide scrollbar for Firefox */
 .content-wrapper {
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none; 
 }
 .inner {
     position: relative;
@@ -86,7 +81,7 @@ body, html {
     height: auto;
     background-color: rgba(113, 105, 224, 0.4);
     padding: 2rem;
-    border-radius: 20px; /* This makes the edges rounded */
+    border-radius: 20px;
 }
 .arrow-btn {
   background: none;
