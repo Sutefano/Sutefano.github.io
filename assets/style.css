@@ -43,7 +43,7 @@ body, html {
     padding: 2rem;
 
     /* Transparent background to show image behind */
-    background-color: rgba(30, 27, 110, 0.8); /* Light grey/white frost */
+    background-color: rgba(75, 73, 134, 0.8); /* Light grey/white frost */
 }
 
 /* Hide scrollbar for WebKit (Chrome, Safari) */
@@ -84,7 +84,7 @@ body, html {
     position: relative;
     width: auto;
     height: auto;
-    background-color: rgba(113, 105, 224, 0.2);
+    background-color: rgba(113, 105, 224, 0.4);
     padding: 2rem;
     border-radius: 20px; /* This makes the edges rounded */
 }
@@ -226,8 +226,10 @@ body, html {
         }
         .showcase p{
             font-size: 14px;
+            + showcaseDesc{
+                font-size: 11px;
+            }
         }
-
     }
 
     /* Mobile phones */
@@ -261,6 +263,9 @@ body, html {
         }
         .showcase p{
             font-size: 10px;
+        }
+        .showcaseDesc{
+            font-size: 9px;
         }
         .logo{
             max-width: 60px;
